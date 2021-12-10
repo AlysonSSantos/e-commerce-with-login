@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    padding: 0.2px;
+    margin: 0.2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --color01: #483d3f;
+    --color02: #058ed9;
+    --color03: #f4ebd9;
+    --color04: #a39a92;
+    --color05: #77685d;
+    --color06: #393e41;
+}
+
+#bg{
+    background-image: radial-gradient(#058ed9, #393e41);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#loginBox{
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(68, 66, 66, 0.432);
+    text-align: center;
+}
+
+i{
+    font-size: 3.5rem;
+    margin: 4rem auto 3rem auto;
+}
+
+.user{
+    display: block;
+    width: 14rem;
+    height: 1.9rem;
+    border-radius: 8px 0;
+    margin: .3rem auto;
+    text-align: center;
+    border:none;
+    background-color: var(--color06);
+    color: white;
+}
+
+.user:hover{
+    box-shadow: 1px 1px 2px 1px rgb(59, 55, 55);
+    transition: 2.s;
+}
+
+::placeholder{
+    text-align: center;
+    color: rgb(196, 189, 189);
+}
+
+input[type="submit"]{
+    border-radius: 5px;
+    padding: 2px 8px;
+    border: none;
+    margin: .5rem auto 2.7rem auto;
+    background-color: rgb(196, 189, 189);
+    box-shadow: 1px 1px 2px 1px rgb(59, 55, 55);
+    background: -webkit-linear-gradient(rgb(219, 219, 219), rgb(107, 107, 107));
+}
+
+input[type="submit"]:hover{
+    color: #145274;
+    transition: .3s;
+}
+
+#loginBox a{
+    color: #000;
+    margin: .5px auto;
+}
+
+#loginBox a:hover{
+    color: rgb(196, 189, 189);
+    transition: .2s;
+}
