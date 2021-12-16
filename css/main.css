@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: .2px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color01: #483d3f;
+    --color02: #058ed9;
+    --color03: #f4ebd9;
+    --color04: #a39a92;
+    --color05: #77685d;
+    --color06: #393e41;
+}
+
+body{
+    background:rgba(216, 216, 216, 0.767);
+}
+
+header{
+    background: chocolate;
+}
+
+h1{
+    display: inline-block;
+    color: #3080e8;
+    position: absolute;
+    top: 1.5rem;
+}
+
+
+h1:hover{
+    color: #4030e8;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+#menu{
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    margin: 1rem;
+}
+
+.hamburguer{
+    width: 2.5rem;
+    height:4px;
+    border-radius: 5px;
+    background:#3080e8;
+    margin: .45rem auto;
+}
+
+.hamburguer:hover{
+    background: #4030e8;
+}
+
+#sideBar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background:rgba(70, 116, 214, 0.767);
+    width: 0;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+#sideBar a{
+    display: block;
+    text-align: center;
+    margin: 1rem 0.2rem;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    overflow: hidden;
+}
+
+#sideBar a:hover{
+    background-color: chocolate;
+}
+
+#sideBar p{
+    color: #fff;
+    text-align: right;
+    margin: 0 1rem;
+}
+
+/*
+
+#sideBar p:hover{
+    background-color: chocolate;
+}
+*/
