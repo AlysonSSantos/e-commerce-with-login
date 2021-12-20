@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 *{
     margin: 0;
     padding: .2px;
@@ -21,13 +22,18 @@ body{
 
 header{
     background: chocolate;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0 .2rem 0;
+}
+
+lord-icon{
+    margin-top: -1rem ;
 }
 
 h1{
     display: inline-block;
     color: #3080e8;
-    position: absolute;
-    top: 1.5rem;
 }
 
 
@@ -43,7 +49,8 @@ h1:hover{
     width: 3rem;
     height: 3rem;
     background: transparent;
-    margin: 1rem;
+    margin: .4rem 1rem;
+    display: none;
 }
 
 .hamburguer{
@@ -62,10 +69,11 @@ h1:hover{
     position: fixed;
     right: 0;
     top: 0;
-    background:rgba(70, 116, 214, 0.767);
+    background:rgba(70, 116, 214, 0.925);
     width: 0;
     height: 100%;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    transition: .2s;
 }
 
 #sideBar a{
@@ -74,7 +82,7 @@ h1:hover{
     margin: 1rem 0.2rem;
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 10px 8px;
     overflow: hidden;
 }
 
@@ -85,12 +93,77 @@ h1:hover{
 #sideBar p{
     color: #fff;
     text-align: right;
-    margin: 0 1rem;
+    width: 15px;
+    margin: -.5rem 1.1rem auto auto;
+    font-size: 1.3rem;
+    padding: 4px 6px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-/*
 
 #sideBar p:hover{
     background-color: chocolate;
+    cursor: pointer;
 }
-*/
+
+#dskMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: .5rem;
+    border-radius: 8px;
+    padding: 4px;
+    background: #dd7c3b;
+    max-height: 1.5rem;
+}
+
+#dskMenu a{
+    margin: 0 1rem;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 4px 6px;
+    transition: .3s;
+}
+
+#dskMenu a:hover{
+    background-color: #393e4133;
+}
+#categorias a{
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    margin: .5rem auto;
+}
+
+#categorias a:hover{
+    text-decoration: underline #393e41;
+}
+
+#categorias{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 4px 6px;
+    transition: .3s;
+}
+
+#categorias:hover{
+    cursor: pointer;
+    background:#393e4133;
+}
+
+/*Conf Responsividade*/
+@media screen and (max-width: 650px) {
+    #dskMenu{
+        display: none;
+    }
+    #menu
+   {
+       display: block;
+   }
+   header{
+       text-align: left;
+   }
+}
