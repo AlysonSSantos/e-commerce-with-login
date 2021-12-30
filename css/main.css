@@ -43,6 +43,38 @@ h1:hover{
     cursor: pointer;
 }
 
+#carrinho{
+    float: right;
+    margin: .4rem 1rem;
+}
+
+#menuCarrinho{
+    position: fixed;
+    right: 4.3rem;
+    top: 4.2rem;
+    border-radius: 15px 0 15px 15px;
+    min-width: 0rem;
+    min-height: 0rem;
+    overflow: hidden;
+}
+
+#menuCarrinho a{
+    color: #000;
+    display: block;
+    background-color: rgba(117, 111, 111, 0.486);
+    margin: 1rem .2px;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    display: none;
+}
+
+#fecharCarrinho{
+    display: none;
+}
+
+#menuCarrinho a:hover{
+    background-color: rgba(155, 147, 147, 0.486);
+}
 
 #menu{
     float: right;
@@ -128,7 +160,7 @@ h1:hover{
 }
 
 #dskMenu a:hover{
-    background-color: #393e4133;
+    background-color: #abb2b633;
 }
 #categorias a{
     display: block;
@@ -151,7 +183,7 @@ h1:hover{
 
 #categorias:hover{
     cursor: pointer;
-    background:#393e4133;
+    background:#abb2b633;
 }
 
 /*Conf Responsividade*/

@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Loja maluca</title>
 <link rel="stylesheet" href="css/main.css"/>
-<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 <script src="js/new.js"></script>
+<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Configurando ícones-->
+<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Conf ícones-->
 </head>
     <html>
         <body>
@@ -17,6 +18,14 @@
                     colors="primary:#3080e8,secondary:#4030e8"
                     style="width:5rem;height:5rem">
                 </lord-icon><h1>Shoping.com</h1>
+                <div id="carrinho" onclick="openPurchases()">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/slkvcfos.json"
+                        trigger="hover"
+                        colors="primary:#3080e8,secondary:#4030e8"
+                        style="width:4.4rem;height:4.4rem">
+                    </lord-icon></div>
+                    <div id="menuCarrinho"><div onclick="closePurchases()" id="fecharCarrinho">X</div><a id="produto" href="#">Produto 01</a></div>
                 <div id="menu" onclick="openSideBar()"><div class="hamburguer"></div> <div class="hamburguer"></div> <div class="hamburguer"></div> </div>
                 <nav id="sideBar"><p onclick="closeSideBar()">X</p><a href="#">Home</a> <a href="#">Produtos</a> <a href="#">Novidades</a> <a href="#">Suporte</a></nav>
             </header>
