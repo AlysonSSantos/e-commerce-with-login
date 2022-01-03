@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
-
 *{
-    margin: 0;
-    padding: .2px;
-    font-family:Arial, Helvetica, sans-serif;
+    padding: 0.2px;
+    margin: 0.2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root{
@@ -16,196 +15,70 @@
     --color06: #393e41;
 }
 
-body{
-    background:rgba(216, 216, 216, 0.767);
-}
-
-header{
-    background: chocolate;
-    text-align: center;
-    margin: auto;
-    padding: 1rem 0 .2rem 0;
-}
-
-lord-icon{
-    margin-top: -1rem ;
-}
-
-h1{
-    display: inline-block;
-    color: #3080e8;
-}
-
-
-h1:hover{
-    color: #4030e8;
-    transition: .5s;
-    cursor: pointer;
-}
-
-#carrinho{
-    float: right;
-    margin: .4rem 1rem;
-}
-
-#menuCarrinho{
-    position: fixed;
-    right: 4.3rem;
-    top: 4.2rem;
-    border-radius: 15px 0 15px 15px;
-    min-width: 0rem;
-    min-height: 0rem;
-    overflow: hidden;
-}
-
-#menuCarrinho a{
-    color: #000;
-    display: block;
-    background-color: rgba(117, 111, 111, 0.486);
-    margin: 1rem .2px;
-    padding: 1.5rem;
-    border-radius: .5rem;
-    display: none;
-}
-
-#fecharCarrinho{
-    display: none;
-}
-
-#menuCarrinho a:hover{
-    background-color: rgba(155, 147, 147, 0.486);
-}
-
-#menu{
-    float: right;
-    width: 3rem;
-    height: 3rem;
-    background: transparent;
-    margin: .4rem 1rem;
-    display: none;
-}
-
-.hamburguer{
-    width: 2.5rem;
-    height:4px;
-    border-radius: 5px;
-    background:#3080e8;
-    margin: .45rem auto;
-}
-
-.hamburguer:hover{
-    background: #4030e8;
-}
-
-#sideBar{
-    position: fixed;
-    right: 0;
-    top: 0;
-    background:rgba(70, 116, 214, 0.925);
-    width: 0;
-    height: 100%;
-    padding: 1.5rem 0;
-    transition: .2s;
-    z-index: 10;
-}
-
-#sideBar a{
-    display: block;
-    text-align: center;
-    margin: 1rem 0.2rem;
-    color: white;
-    text-decoration: none;
-    padding: 10px 8px;
-    overflow: hidden;
-}
-
-#sideBar a:hover{
-    background-color: rgb(210, 105, 30);
-}
-
-#sideBar p{
-    color: #fff;
-    text-align: right;
-    width: 15px;
-    margin: -.5rem 1.1rem auto auto;
-    font-size: 1.3rem;
-    padding: 4px 6px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-
-#sideBar p:hover{
-    background-color: chocolate;
-    cursor: pointer;
-}
-
-#dskMenu{
+#bg{
+    background-image: radial-gradient(rgba(230, 65, 0, 0.788), rgb(238, 107, 14));
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: .5rem;
-    border-radius: 8px;
-    padding: 4px;
-    background: #dd7c3b;
-    max-height: 1.5rem;
+    align-items: center;
+    height: 100vh;
 }
 
-#dskMenu a{
-    margin: 0 1rem;
-    color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 4px 6px;
-    transition: .3s;
-}
-
-#dskMenu a:hover{
-    background-color: #abb2b633;
-}
-#categorias a{
-    display: block;
+#loginBox{
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(255, 255, 255, 0.13);
     text-align: center;
-    color: #000;
-    text-decoration: none;
-    margin: .5rem auto;
 }
 
-#categorias a:hover{
-    text-decoration: underline #393e41;
+i{
+    font-size: 3.5rem;
+    margin: 4rem auto 3rem auto;
 }
 
-#categorias{
-    display: inline-block;
+.user{
+    display: block;
+    width: 14rem;
+    height: 1.9rem;
+    border-radius: 8px 0;
+    margin: .3rem auto;
+    text-align: center;
+    border:none;
+    background-color: var(--color06);
+    color: white;
+}
+
+.user:hover{
+    box-shadow: 1px 1px 2px 1px rgb(59, 55, 55);
+    transition: 2.s;
+}
+
+::placeholder{
+    text-align: center;
+    color: rgb(196, 189, 189);
+}
+
+input[type="submit"]{
     border-radius: 5px;
-    padding: 4px 6px;
+    padding: 2px 8px;
+    border: none;
+    margin: .5rem auto 2.7rem auto;
+    background-color: rgb(196, 189, 189);
+    box-shadow: 1px 1px 2px 1px rgb(59, 55, 55);
+    background: -webkit-linear-gradient(rgb(219, 219, 219), rgb(107, 107, 107));
+}
+
+input[type="submit"]:hover{
+    color: #145274;
     transition: .3s;
 }
 
-#categorias:hover{
-    cursor: pointer;
-    background:#abb2b633;
+#loginBox a{
+    color: #000;
+    margin: .5px auto;
 }
 
-/*Conf Responsividade*/
-@media screen and (max-width: 650px) {
-    #dskMenu{
-        display: none;
-    }
-    #menu
-   {
-       display: block;
-   }
-   header{
-       text-align: left;
-   }
-   #carrinho{
-       display: none;
-   }
-   #menuCarrinho{
-        display: none;
-   }
-   #fecharCarrinho{
-        display: none;
-   }
+#loginBox a:hover{
+    color: rgb(196, 189, 189);
+    transition: .2s;
 }

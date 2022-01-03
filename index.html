@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="theme-color" content="#dd7c3b"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="#dd7c3b"/>
-    <title>Login</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel=stylesheet href="css/style.css"/>
-    <script src="js/main.js"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Loja maluca</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="shortcut icon" href="media/basket.png" type="image/x-icon">
+<script src="js/main.js"></script>
+<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Configurando ícones-->
+<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Conf ícones-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"><!--Conf font awesome (para ícones)-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script><!--conf bibliioteca jquery-->
 </head>
     <html>
-        <body id="bg">
-            <div id="loginBox">
-                <i class="fab fa-adn"></i>
-                <input class="user" type="email" name="emailUser" placeholder="example@gmail.com">
-                <input class="user" type="password" name="passUser" placeholder="password">
-                <input onclick="submit()" type="submit" value="Enviar"><br>
-                <p><a href="#">Esqueceu sua senha?</a></p>
-                <p>Não tem uma conta? <a href="#">Criar</a></p>
-            </div>
+        <body>
+            <header>
+                <i onclick="login()" id="userIcon" class="fas fa-user"><label id="userName"> User</label></i>
+                <lord-icon
+                    src="https://cdn.lordicon.com/dnoiydox.json"
+                    trigger="hover"
+                    colors="primary:#3080e8,secondary:#4030e8"
+                    style="width:5rem;height:5rem">
+                </lord-icon><h1>Shoping.com</h1>
+                <div id="carrinho" onclick="openPurchases()">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/slkvcfos.json"
+                        trigger="hover"
+                        colors="primary:#3080e8,secondary:#4030e8"
+                        style="width:4.4rem;height:4.4rem">
+                    </lord-icon></div>
+                    <div id="menuCarrinho"><div onclick="closePurchases()" id="fecharCarrinho">X</div><a id="produto" href="#">Produto 01</a></div>
+                <div id="menu" onclick="openSideBar()"><div class="hamburguer"></div> <div class="hamburguer"></div> <div class="hamburguer"></div> </div>
+                <nav id="sideBar"><p onclick="closeSideBar()">X</p><a href="#">Home</a> <a href="#">Produtos</a> <a href="#">Novidades</a> <a href="#">Suporte</a></nav>
+            </header>
+                <nav id="dskMenu"><details id="categorias"><summary>Categorias</summary><a href="#">Alface</a> <a href="#">Repolho roxo</a> <a href="#">Samambaias</a> <a href="#">Material escolar</a> <a href="#">Carros elétricos</a></details><a href="#">Destaques do dia</a> <a href="#">Ofertas</a> <a href="#">Fale conosco</a></nav>
         </body>
     </html>
