@@ -59,17 +59,17 @@ i{
 }
 
 input[type="submit"]{
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 2px 8px;
     border: none;
     margin: .5rem auto 2.7rem auto;
-    background-color: rgb(196, 189, 189);
-    box-shadow: 1px 1px 2px 1px rgb(59, 55, 55);
-    background: -webkit-linear-gradient(rgb(219, 219, 219), rgb(107, 107, 107));
+    background-color:  rgba(255, 255, 255, 0.39);
+    color: rgb(39, 36, 36);
 }
 
 input[type="submit"]:hover{
-    color: #145274;
+    background-color: #393e41;
+    color: #fff;
     transition: .3s;
 }
 
@@ -79,6 +79,6 @@ input[type="submit"]:hover{
 }
 
 #loginBox a:hover{
-    color: rgb(196, 189, 189);
+    color: #fff;
     transition: .2s;
 }

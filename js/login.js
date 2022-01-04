@@ -1,19 +1,34 @@
 function handleCredentialResponse(response) {
-    
-}
-  window.onload = function () {
-    google.accounts.id.initialize({
-      client_id: "176624051442-l4r924990sjj2avqiblgpnan2d3dvqbu.apps.googleusercontent.com",
-      callback: handleCredentialResponse
-    });
-    google.accounts.id.renderButton(
-      document.getElementById("buttonDiv"),
-      { theme: "outline", size: "large" }  // customization attributes
-    );
-    google.accounts.id.prompt(); // also display the One Tap dialog
-  }
+            const data = jwt_decode(response.credential)
+            console.log(data)
 
-/*function submit(){
+            given_name.textContent = data.given_name
+
+        }
+
+        window.onload = function () {
+
+          google.accounts.id.initialize({
+            client_id: "176624051442-l4r924990sjj2avqiblgpnan2d3dvqbu.apps.googleusercontent.com",
+            callback: handleCredentialResponse
+          });
+          
+          google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { 
+                theme: "filled_black", 
+                size: "large",
+                type: "standard",
+                shape: "rectangular",
+                text: "$ {button.text}",
+                logo_alignment: "left",
+            }  // customization attributes
+          );
+          google.accounts.id.prompt(); // also display the One Tap dialog
+        }
+
+
+function submit(){
     
     var login=0; //true or false
     var user=document.getElementsByName('emailUser')[0].value;
@@ -28,4 +43,3 @@ function handleCredentialResponse(response) {
         alert("Dados incorretos, por favor, tente novamente");
     }
 }
-*/

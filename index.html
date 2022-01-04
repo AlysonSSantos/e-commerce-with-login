@@ -3,13 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Shoping.com</title>
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="shortcut icon" href="media/basket.png" type="image/x-icon">
-<script src="js/main.js"></script>
+
+<title>Shoping.com</title> <!--Título do site-->
+<link rel="stylesheet" href="css/style.css"/> <!--Importando a folha de estilo-->
+<link rel="shortcut icon" href="media/basket.png" type="image/x-icon"> <!--favicon da página-->
+<script src="js/main.js"></script><!--importando script principal da pagina-->
+
+<script src="https://accounts.google.com/gsi/client" async defer></script> <!--conf login com o google-->
+<script src="js/login.js"></script> <!--importando script do login para manter o login com o google-->
+<script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script> <!--biblioteca utilizada no script login-->
+
 <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Configurando ícones-->
 <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Conf ícones-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"><!--Conf font awesome (para ícones)-->
+
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -18,13 +25,13 @@
     <html>
         <body>
             <header>
-                <i onclick="login()" id="userIcon" class="fas fa-user"><label id="userName"> User</label></i>
+                <i onclick="login()" id="userIcon" class="fas fa-user"><label id="userName"><p id="given_name"></p></label></i>
                 <lord-icon
                     src="https://cdn.lordicon.com/dnoiydox.json"
                     trigger="hover"
                     colors="primary:#3080e8,secondary:#4030e8"
                     style="width:5rem;height:5rem">
-                </lord-icon><h1>Shoping.com</h1>
+                </lord-icon><h1 id="nomeDoSite">Shoping.com</h1>
                 <div id="carrinho" onclick="openPurchases()">
                     <lord-icon
                         src="https://cdn.lordicon.com/slkvcfos.json"

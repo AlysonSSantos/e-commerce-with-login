@@ -42,13 +42,17 @@ lord-icon{
     font-weight: lighter;
 }
 
-h1{
+#given_name{
+    display: inline-block;
+    text-indent: .5rem;
+}
+
+#nomeDoSite{
     display: inline-block;
     color: #3080e8;
 }
 
-
-h1:hover{
+#nomeDoSite:hover{
     color: #4030e8;
     transition: .5s;
     cursor: pointer;
@@ -211,6 +215,13 @@ h1:hover{
 
 /*Conf Responsividade*/
 @media screen and (max-width: 650px) {
+    #nomeDoSite{
+        display: none;
+    }
+    lord-icon{
+        text-align: center;
+        margin: -1rem auto auto 2rem;
+    }
     #dskMenu{
         display: none;
     }
@@ -221,6 +232,10 @@ h1:hover{
    header{
        text-align: left;
    }
+   #given_name{
+    max-width: 108px;
+    overflow: hidden;
+   }
    #carrinho{
        display: none;
    }
@@ -230,4 +245,5 @@ h1:hover{
    #fecharCarrinho{
         display: none;
    }
+   h1
 }
