@@ -219,8 +219,7 @@ lord-icon{
         display: none;
     }
     lord-icon{
-        text-align: center;
-        margin: -1rem auto auto 2rem;
+        margin: -1rem 2rem 0rem 2rem;
     }
     #dskMenu{
         display: none;
@@ -233,7 +232,7 @@ lord-icon{
        text-align: left;
    }
    #given_name{
-    max-width: 108px;
+    min-width: 108px;
     overflow: hidden;
    }
    #carrinho{
@@ -245,5 +244,4 @@ lord-icon{
    #fecharCarrinho{
         display: none;
    }
-   h1
 }
