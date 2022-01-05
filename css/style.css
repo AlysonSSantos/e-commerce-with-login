@@ -218,8 +218,11 @@ lord-icon{margin-top: -.5rem ;}
     #nomeDoSite{
         display: none;
     }
+    #logoIcon{
+        text-align: center;
+    }
     lord-icon{
-        margin: -.4rem 7rem;
+        margin-top: -.4rem;
         text-align: center;
     }
     #dskMenu{
