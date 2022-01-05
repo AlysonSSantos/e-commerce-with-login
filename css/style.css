@@ -16,11 +16,10 @@ header{
     text-align: center;
     margin: auto;
     padding: 1rem 0 .2rem 0;
+    min-height: 5rem;
 }
 
-lord-icon{
-    margin-top: -1rem ;
-}
+lord-icon{margin-top: -.5rem ;}
 
 #userIcon{
     float: left;
@@ -35,16 +34,13 @@ lord-icon{
     transition: .3s;
 }
 
-#userName{
-    color: #fff;
-    font-size: 1.9rem;
-    text-shadow: none;
-    font-weight: lighter;
-}
-
 #given_name{
-    display: inline-block;
-    text-indent: .5rem;
+    color: #fff;
+    text-shadow: none;
+    font-size: 1.5rem;
+    display: block;
+    font-weight: lighter;
+    margin: .2rem auto;
 }
 
 #nomeDoSite{
@@ -60,7 +56,7 @@ lord-icon{
 
 #carrinho{
     float: right;
-    margin: .4rem 1rem;
+    margin: .3rem 1rem;
     cursor: pointer;
 }
 
@@ -215,11 +211,16 @@ lord-icon{
 
 /*Conf Responsividade*/
 @media screen and (max-width: 650px) {
+    #userIcon{
+        margin: auto 0rem auto auto;
+        text-align: center;
+    }
     #nomeDoSite{
         display: none;
     }
     lord-icon{
-        margin: -1rem 2rem 0rem 2rem;
+        margin: -.4rem 7rem;
+        text-align: center;
     }
     #dskMenu{
         display: none;
@@ -227,11 +228,15 @@ lord-icon{
     #menu
    {
        display: block;
+       position: fixed;
+       right: .4rem;
+       top: 1.4rem;
    }
    header{
        text-align: left;
    }
    #given_name{
+    display: block;
     min-width: 108px;
     overflow: hidden;
    }
