@@ -1,4 +1,6 @@
+
 function handleCredentialResponse(response) {
+  
             const data = jwt_decode(response.credential)
             console.log(data)
 
@@ -16,7 +18,7 @@ function handleCredentialResponse(response) {
           google.accounts.id.renderButton(
             document.getElementById("buttonDiv"),
             { 
-                theme: "filled_black", 
+                theme: "filled_blue", 
                 size: "large",
                 type: "standard",
                 shape: "rectangular",
@@ -26,7 +28,6 @@ function handleCredentialResponse(response) {
           );
           google.accounts.id.prompt(); // also display the One Tap dialog
         }
-
 
 function submit(){
     

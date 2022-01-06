@@ -58,6 +58,12 @@ i{
     color: rgb(196, 189, 189);
 }
 
+#googleLogin{
+    text-align: center;
+    margin: auto;
+    width: 235px;
+}
+
 input[type="submit"]{
     border-radius: 3px;
     padding: 2px 8px;

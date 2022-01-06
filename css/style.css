@@ -214,6 +214,20 @@ lord-icon{margin-top: -.5rem ;}
     background:#abb2b633;
 }
 
+.item{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+}
+
+.imgProduto{
+    width: 10rem;
+}
+
+.item p{
+    margin-top: -1rem;
+}
+
 /*Conf Responsividade*/
 @media screen and (max-width: 650px) {
     #userIcon{
