@@ -214,10 +214,15 @@ lord-icon{margin-top: -.5rem ;}
     background:#abb2b633;
 }
 
+#produtos{
+    text-align: center;
+}
+
 .item{
     width: 10rem;
     height: 10rem;
     text-align: center;
+    margin: auto;
     display: inline-block;
 }
 
