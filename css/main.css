@@ -24,6 +24,10 @@
     height: 100vh;
 }
 
+#boasVindas p{
+    text-align: center;
+}
+
 #loginBox{
     width: 25rem;
     height: 25rem;
@@ -88,3 +92,4 @@ input[type="submit"]:hover{
     color: #fff;
     transition: .2s;
 }
+

@@ -4,7 +4,9 @@ function handleCredentialResponse(response) {
             const data = jwt_decode(response.credential)
             console.log(data)
 
-            given_name.textContent = data.given_name
+            window.location = "index.html"
+
+            given_name.textContent = ","+" "+data.given_name
 
         }
 
@@ -18,7 +20,7 @@ function handleCredentialResponse(response) {
           google.accounts.id.renderButton(
             document.getElementById("buttonDiv"),
             { 
-                theme: "filled_blue", 
+                theme: "filled_black", 
                 size: "large",
                 type: "standard",
                 shape: "rectangular",
