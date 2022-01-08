@@ -13,7 +13,13 @@ document.getElementById("produto002").innerHTML=itens.tipo2+" "+itens.marca1;
 document.getElementById("produto003").innerHTML=itens.tipo3+" "+itens.marca4;
 document.getElementById("produto004").innerHTML=itens.tipo4+" "+itens.marca2;
 document.getElementById("produto005").innerHTML=itens.tipo1+" "+itens.marca2;
-document.getElementById("produto006").innerHTML=itens.tipo4+" "+itens.marca4;
+document.getElementById("produto006").innerHTML=itens.tipo3+" "+itens.marca1;
+document.getElementById("produto007").innerHTML=itens.tipo3+" "+itens.marca4;
+document.getElementById("produto008").innerHTML=itens.tipo1+" "+itens.marca1;
+document.getElementById("produto009").innerHTML=itens.tipo2+" "+itens.marca4;
+document.getElementById("produto010").innerHTML=itens.tipo4+" "+itens.marca3;
+document.getElementById("produto011").innerHTML=itens.tipo1+" "+itens.marca2;
+document.getElementById("produto012").innerHTML=itens.tipo2+" "+itens.marca2;
 }
 
 const login = () =>{
