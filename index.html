@@ -1,101 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Shoping.com</title> <!--Título do site-->
-<link rel="stylesheet" href="css/style.css"/> <!--Importando a folha de estilo-->
-<link rel="shortcut icon" href="media/basket.png" type="image/x-icon"> <!--favicon da página-->
-<script src="js/main.js"></script><!--importando script principal da pagina-->
+    <title>Shoping.com</title>
+    <!--Título do site-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Importando a folha de estilo-->
+    <link rel="shortcut icon" href="media/basket.png" type="image/x-icon">
+    <!--favicon da página-->
+    <script src="js/main.js"></script>
+    <!--importando script principal da pagina-->
 
-<script src="js/login.js"></script> <!--código javascript sobre o login-->
-<script src="https://accounts.google.com/gsi/client" async defer></script> <!--conf login com o google-->
-<script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script> <!--conf biblioteca utilizada para decodificar login com o google-->
+    <script src="js/login.js"></script>
+    <!--código javascript sobre o login-->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!--conf login com o google-->
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <!--conf biblioteca utilizada para decodificar login com o google-->
 
-<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Configurando ícones-->
-<script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script> <!--Conf ícones-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"><!--Conf font awesome (para ícones)-->
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!--Configurando ícones-->
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!--Conf ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--Conf font awesome (para ícones)-->
 
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script><!--conf bibliioteca jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--conf bibliioteca jquery-->
 
 </head>
-    <html>
-        <body onload="confItens()">
-            <header>
-                <i onclick="login()" id="userIcon" class="fas fa-user"><p id="given_name"></p></i></p>
-                <div id="logoIcon">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/dnoiydox.json"
-                        trigger="hover"
-                        colors="primary:#3080e8,secondary:#4030e8"
-                        style="width:5rem;height:5rem">
-                    </lord-icon>
-                </div><h1 id="nomeDoSite">Shoping.com</h1>
-                <div id="carrinho" onclick="openPurchases()">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/slkvcfos.json"
-                        trigger="hover"
-                        colors="primary:#3080e8,secondary:#4030e8"
-                        style="width:4.4rem;height:4.4rem">
-                    </lord-icon></div>
-                    <div id="menuCarrinho"><div onclick="closePurchases()" id="fecharCarrinho">X</div><a id="produto" href="#">Produto 01</a></div>
-                <div id="menu" onclick="openSideBar()"><div class="hamburguer"></div> <div class="hamburguer"></div> <div class="hamburguer"></div> </div>
-                <nav id="sideBar"><p onclick="closeSideBar()">X</p><a href="#">Home</a> <a href="#">Produtos</a> <a href="#">Novidades</a> <a href="#">Suporte</a></nav>
-            </header>
-                <nav id="dskMenu"><details id="categorias"><summary>Categorias</summary><a href="#">Alface</a> <a href="#">Repolho roxo</a> <a href="#">Samambaias</a> <a href="#">Material escolar</a> <a href="#">Carros elétricos</a></details><a href="#">Destaques do dia</a> <a href="#">Ofertas</a> <a href="#">Fale conosco</a></nav>
-                <section id="produtos">
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto001"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto002"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto003"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto004"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto005"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto006"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto007"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto008"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto009"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto010"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto011"></p>
-                    </div>
-                    <div class="item">
-                        <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
-                        <p id="produto012"></p>
-                    </div>
-                </section>
-        </body>
-    </html>
+<html>
+
+<body onload="confItens()">
+    <header>
+        <i onclick="login()" id="userIcon" class="fas fa-user">
+            <p id="given_name"></p>
+        </i></p>
+        <div id="logoIcon">
+            <lord-icon src="https://cdn.lordicon.com/dnoiydox.json" trigger="hover"
+                colors="primary:#3080e8,secondary:#4030e8" style="width:5rem;height:5rem">
+            </lord-icon>
+        </div>
+        <h1 id="nomeDoSite">Shoping.com</h1>
+        <div id="carrinho" onclick="openPurchases()">
+            <lord-icon src="https://cdn.lordicon.com/slkvcfos.json" trigger="hover"
+                colors="primary:#3080e8,secondary:#4030e8" style="width:4.4rem;height:4.4rem">
+            </lord-icon>
+        </div>
+        <div id="menuCarrinho">
+            <div onclick="closePurchases()" id="fecharCarrinho">X</div><a id="produto" href="#">Produto 01</a>
+        </div>
+        <div id="menu" onclick="openSideBar()">
+            <div class="hamburguer"></div>
+            <div class="hamburguer"></div>
+            <div class="hamburguer"></div>
+        </div>
+        <nav id="sideBar">
+            <p onclick="closeSideBar()">X</p><a href="#">Home</a> <a href="#">Produtos</a> <a href="#">Novidades</a> <a
+                href="#">Suporte</a>
+        </nav>
+    </header>
+    <nav id="dskMenu">
+        <details id="categorias">
+            <summary>Categorias</summary><a href="#">Alface</a> <a href="#">Repolho roxo</a> <a href="#">Samambaias</a>
+            <a href="#">Material escolar</a> <a href="#">Carros elétricos</a>
+        </details><a href="#">Destaques do dia</a> <a href="#">Ofertas</a> <a href="#">Fale conosco</a>
+    </nav>
+    <section id="produtos">
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto001"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto002"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto003"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto004"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto005"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto006"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto007"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto008"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto009"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto010"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto011"></p>
+        </div>
+        <div class="item">
+            <img class="imgProduto" src="media/basket.png" alt="Produtos da loja">
+            <p id="produto012"></p>
+        </div>
+    </section>
+</body>
+
+</html>
