@@ -4,10 +4,12 @@ function handleCredentialResponse(response) {
             const data = jwt_decode(response.credential)
             console.log(data)
 
-            window.location = "index.html"
-
-            given_name.textContent = ","+" "+data.given_name
-
+            document.getElementById("given_name").style.display="block"
+            given_name.textContent = "Bem Vindo,"+" "+data.given_name+"!"
+            setTimeout(function() {
+             window.location = "index.html"
+            }, 2500)
+          
         }
 
         window.onload = function () {

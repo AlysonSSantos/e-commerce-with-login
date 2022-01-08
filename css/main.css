@@ -93,3 +93,33 @@ input[type="submit"]:hover{
     transition: .2s;
 }
 
+#given_name{
+    display: none;
+    position: fixed;
+    background-image: linear-gradient(-90deg, #2a62a3, #8CBFB4, #bed1a5);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 10s;
+    padding-top: 45vh;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    text-shadow: 0 0 20px #fff;
+    transition: .2s;
+    color: #fff;
+    background-size: 300% 300%;
+    animation: bg 15s ease infinite;
+}
+
+@keyframes bg{
+0%{
+    background-position: 0 50%;
+}
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0% 50%;
+}
+}
