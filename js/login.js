@@ -4,7 +4,7 @@ function handleCredentialResponse(response) {
   console.log(data)
 
   document.getElementById("given_name").style.display = "block"
-  given_name.textContent = "Bem Vindo(a)," + " " + data.given_name + "!"
+  given_name.textContent = "Eu te amo" + " " + data.given_name + "!"
   setTimeout(function () {
     window.location = "index.html"
   }, 2500)
