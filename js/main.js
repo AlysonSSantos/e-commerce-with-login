@@ -51,5 +51,6 @@ const closePurchases = () => {
 }
 
 const compra = () => {
-    window.location = "#"
+    window.location = "comprando.html"
 }
+

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+    margin: .2px;
+    padding: .2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#voltar img{
+    margin: 1.5rem 1rem;
+    width: 3rem;
+    height: 2.5rem;
+}
+
+#voltar:hover{
+    cursor: pointer;
+}
+
+#menu{
+    float: right;
+    margin: 1.3rem;
+}
+
+.hamburguer {
+    width: 2.5rem;
+    height: 4px;
+    border-radius: 5px;
+    background: #3080e8;
+    margin: .45rem auto;
+}
+
+.hamburguer:hover {
+    background: #4030e8;
+}
+
+#sideBar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(70, 116, 214, 0.925);
+    width: 0;
+    height: 100%;
+    padding: 1.5rem 0;
+    transition: .2s;
+    z-index: 10;
+}
+
+#sideBar a {
+    display: block;
+    text-align: center;
+    margin: 1rem 0.2rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 8px;
+    overflow: hidden;
+}
+
+#sideBar a:hover {
+    background-color: rgb(210, 105, 30);
+}
+
+#sideBar p {
+    color: #fff;
+    text-align: right;
+    width: 15px;
+    margin: -.5rem 1.1rem auto auto;
+    font-size: 1.3rem;
+    padding: 4px 6px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+#sideBar p:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
