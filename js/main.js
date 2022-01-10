@@ -49,3 +49,7 @@ const closePurchases = () => {
     document.getElementById("produto").style.display = "none";
     document.getElementById("fecharCarrinho").style.display = "none";
 }
+
+const compra = () => {
+    window.location = "#"
+}
