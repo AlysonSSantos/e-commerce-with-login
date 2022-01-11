@@ -19,7 +19,7 @@
 
 #menu{
     float: right;
-    margin: 1.3rem;
+    margin: 1.4rem 1rem;
 }
 
 .hamburguer {
@@ -75,4 +75,18 @@
 #sideBar p:hover {
     background-color: chocolate;
     cursor: pointer;
+}
+
+.imgProduto{
+    width: 15rem;
+    height: 15rem;
+    background-image: url("../media/basket.png");
+    background-size: cover;
+    margin: auto;
+}
+
+.mostradorProdutos{
+    margin: auto;
+    background: #83838354;
+    max-width: 800px;
 }

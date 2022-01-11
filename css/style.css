@@ -242,8 +242,11 @@ lord-icon {
     cursor: pointer;
 }
 
-.imgProduto {
+.imgProduto{
     width: 8rem;
+    height: 8rem;
+    background-image: url("../media/basket.png");
+    background-size: cover;
 }
 
 .item p {
