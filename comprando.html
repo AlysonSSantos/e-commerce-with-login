@@ -7,7 +7,9 @@
 
     <title id="tituloSite" onload="novoTitulo()">Shoping.com</title>
 
-    <link rel="stylesheet" href="css/comprando.css" />
+    <link rel="stylesheet" href="css/comprando.css"/>
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <script src="js/main.js"></script>
 
@@ -15,7 +17,7 @@
 </head>
 <html>
 
-<body>
+<body onload="confItens()">
     <header>
         <span id="voltar">
             <a href="index.html" href="">
@@ -35,6 +37,9 @@
     <div class="mostradorProdutos">
         <div class="imgProduto"></div>
     </div>
+    <div class="infoCompra"><h1 id="produto001"></h1></div>
+    <div id="removerFavorito" onclick="removerFavoritos()">x</div>
+    <div onclick="addFavoritos()"   id="favoritos"><i class="fas fa-heart"></i><p id="favInfo"></p></div>
 </body>
 
 </html>

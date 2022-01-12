@@ -90,3 +90,31 @@
     background: #83838354;
     max-width: 800px;
 }
+
+.infoCompra{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#favoritos{
+    text-align: right;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#favoritos i{
+    margin: 1rem;
+}
+
+#removerFavorito{
+    text-align: right;
+    margin: 1rem .9rem -.4rem 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+#favInfo{
+    font-size: normal;
+}
