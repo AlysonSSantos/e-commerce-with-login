@@ -93,7 +93,14 @@
 
 .infoCompra{
     text-align: center;
-    margin: 1rem auto;
+    margin: 1rem auto 2rem auto;
+}
+
+#preco{
+    max-width: 800px;
+    margin: 5rem auto -4rem auto;
+    text-indent: 1rem;
+    font-size: 1.5rem;
 }
 
 #favoritos{
@@ -110,11 +117,23 @@
 
 #removerFavorito{
     text-align: right;
-    margin: 1rem .9rem -.4rem 1rem;
-    display: none;
     cursor: pointer;
+    margin: auto;
+    font-size: 1.5rem;
+    max-width: 800px;
+}
+
+#removerFavorito p{
+    margin: auto 1.7rem;
 }
 
 #favInfo{
     font-size: normal;
+    display: inline-block;
 }
+
+#removeInfo{
+    font-size: normal;
+    display: inline-block;
+}
+

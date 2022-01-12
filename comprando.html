@@ -7,7 +7,7 @@
 
     <title id="tituloSite" onload="novoTitulo()">Shoping.com</title>
 
-    <link rel="stylesheet" href="css/comprando.css"/>
+    <link rel="stylesheet" href="css/comprando.css" />
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
@@ -23,7 +23,6 @@
             <a href="index.html" href="">
                 <img src="https://img.icons8.com/color/48/000000/back--v2.png" /> </a>
         </span>
-
         <div id="menu" onclick="openSideBar()">
             <div class="hamburguer"></div>
             <div class="hamburguer"></div>
@@ -37,9 +36,16 @@
     <div class="mostradorProdutos">
         <div class="imgProduto"></div>
     </div>
-    <div class="infoCompra"><h1 id="produto001"></h1></div>
-    <div id="removerFavorito" onclick="removerFavoritos()">x</div>
-    <div onclick="addFavoritos()"   id="favoritos"><i class="fas fa-heart"></i><p id="favInfo"></p></div>
+    <div class="infoCompra">
+        <h1 id="produto001"></h1>
+    </div>
+    <div id="preco">R$500,98</div>
+    <div onclick="addFavoritos()" id="favoritos"><i class="fas fa-heart"></i>
+        <p id="favInfo"></p>
+    </div>
+    <div id="removerFavorito" onclick="removerFavoritos()">
+        <p id="removeInfo">X</p>
+    </div>
 </body>
 
 </html>
