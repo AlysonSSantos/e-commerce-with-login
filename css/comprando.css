@@ -124,7 +124,7 @@
 }
 
 #removerFavorito p{
-    margin: auto 1.7rem;
+    margin: auto 1.3rem;
 }
 
 #favInfo{
@@ -132,8 +132,44 @@
     display: inline-block;
 }
 
-#removeInfo{
+#removeFav{
     font-size: normal;
     display: inline-block;
 }
 
+#freteInfo{
+    color: #696969;
+    text-indent: 1rem;
+    margin: .5rem auto;
+    max-width: 800px;
+}
+
+#produtosRestantes{
+    text-indent: 1rem;
+    margin: 2.5rem auto auto auto;
+    max-width: 800px;
+}
+
+#descricao{
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: .7rem;
+    text-align: justify;
+}
+
+#comprar{
+    text-align: center;
+}
+
+#comprar input{
+    background-color: #3080e8;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    margin: auto auto 1rem auto
+}
+
+#comprar input:hover{
+    background: #4030e8;
+    box-shadow: 0 0 50px #4030e8;
+}

@@ -17,7 +17,7 @@
 </head>
 <html>
 
-<body onload="confItens()">
+<body>
     <header>
         <span id="voltar">
             <a href="index.html" href="">
@@ -37,15 +37,26 @@
         <div class="imgProduto"></div>
     </div>
     <div class="infoCompra">
-        <h1 id="produto001"></h1>
+        <h1>Nome do produto</h1>
     </div>
     <div id="preco">R$500,98</div>
     <div onclick="addFavoritos()" id="favoritos"><i class="fas fa-heart"></i>
-        <p id="favInfo"></p>
     </div>
     <div id="removerFavorito" onclick="removerFavoritos()">
-        <p id="removeInfo">X</p>
+        <p id="removeFav">X</p>
     </div>
+    <p id="produtosRestantes"></p>
+    <script>
+        produtosEmEstoque()
+    </script>
+    <p id="freteInfo">Frete Grátis</p>
+    <script>
+        confFrete();
+    </script>
+    <div id="descricao">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis deserunt tempora dolorem, quam aliquam adipisci repudiandae, voluptate, saepe minima modi possimus quia. Ipsam ea perferendis incidunt, ratione totam aliquid! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolores eaque corrupti voluptatibus odio deleniti cum ratione quibusdam. Nobis suscipit minus alias at commodi ducimus adipisci architecto incidunt libero rem.</p>
+    </div>
+    <div id="comprar"><input type="button" value="Comprar"></div>
 </body>
 
 </html>
