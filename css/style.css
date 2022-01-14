@@ -206,12 +206,12 @@ lord-icon {
     color: #000;
     text-decoration: none;
     margin: .5rem auto;
-    background: #4030e8;
+    background: var(--color001);
     z-index: 10;
 }
 
 #categorias a:hover {
-    background: #309ee8;
+    background: #e7ab5d;
     text-decoration: underline #393e41;
 }
 

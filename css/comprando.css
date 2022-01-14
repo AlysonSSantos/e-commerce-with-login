@@ -173,3 +173,27 @@
     box-shadow: 0 0 50px #4030e8;
     cursor: pointer;
 }
+
+#promptCompra{
+    height: 0;
+    min-width: 98%;
+    margin:  -35rem auto auto auto;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#fecharPrompt{
+    margin: 1.5rem;
+    color: rgb(228, 36, 36);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: right;
+    cursor: pointer;
+}
+
+#miniMostrador{
+    background-color: cornsilk;
+    width: 4rem;
+    height: 4rem;
+}

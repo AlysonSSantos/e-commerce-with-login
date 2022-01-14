@@ -51,7 +51,8 @@ const closePurchases = () => {
     document.getElementById("fecharCarrinho").style.display = "none";
 }
 
-const compra = () => {
+const produtoInfo = () => {
     window.location = "comprando.html"
+    document.getElementById("infoCompra").innerHTML="oi"
 }
 

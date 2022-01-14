@@ -17,7 +17,7 @@
 </head>
 <html>
 
-<body>
+<body onload="confPreco()">
     <header>
         <span id="voltar">
             <a href="index.html" href="">
@@ -49,14 +49,23 @@
     <script>
         produtosEmEstoque()
     </script>
-    <p id="freteInfo">Frete Grátis</p>
+    <p id="freteInfo"></p>
     <script>
         confFrete();
     </script>
     <div id="descricao">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis deserunt tempora dolorem, quam aliquam adipisci repudiandae, voluptate, saepe minima modi possimus quia. Ipsam ea perferendis incidunt, ratione totam aliquid! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolores eaque corrupti voluptatibus odio deleniti cum ratione quibusdam. Nobis suscipit minus alias at commodi ducimus adipisci architecto incidunt libero rem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis deserunt tempora dolorem, quam
+            aliquam adipisci repudiandae, voluptate, saepe minima modi possimus quia. Ipsam ea perferendis incidunt,
+            ratione totam aliquid! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolores eaque corrupti
+            voluptatibus odio deleniti cum ratione quibusdam. Nobis suscipit minus alias at commodi ducimus adipisci
+            architecto incidunt libero rem.</p>
     </div>
-    <div id="comprar">Comprar</div>
+    <div onclick="comprarProduto()" id="comprar">Comprar</div>
+    <div id="promptCompra">
+        <div onclick="fecharPrompt()" id="fecharPrompt">X</div>
+        <div id="defQuantidade"><input type="range" aria-valuemin="1" aria-valuemax="10"></div>
+        <div id="finalizarCompra">Finalizar Compra</div>
+    </div>
 </body>
 
 </html>

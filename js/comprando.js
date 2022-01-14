@@ -15,8 +15,23 @@ const confFrete = () => {
 };
 
 const produtosEmEstoque = () => {
-    var estoque = new Object();
-    estoque.numero = "Em estoque: 10 Unidades";
-    estoque.unico = "Modelo Único";
+    var estoque = new Object()
+    estoque.numero = "Em estoque: 10 Unidades"
+    estoque.unico = "Modelo Único"
     document.getElementById("produtosRestantes").innerHTML = estoque.numero;
+    
 };
+
+const confPreco = () => {
+    document.getElementById("preco").innerHTML = "R$50,00"
+}
+
+const comprarProduto = () => {
+    document.getElementById("promptCompra").style.height = "35rem";
+    document.getElementById("promptCompra").style.backgroundColor="#3080e8"
+}
+
+const fecharPrompt = () =>{
+    document.getElementById("promptCompra").style.height = "0";
+    document.getElementById("promptCompra").style.backgroundColor="#fff"
+}
