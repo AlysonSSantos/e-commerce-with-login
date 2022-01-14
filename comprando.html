@@ -14,6 +14,10 @@
     <script src="js/main.js"></script>
 
     <script src="js/comprando.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 <html>
 
@@ -39,7 +43,7 @@
     <div class="infoCompra">
         <h1>Nome do produto</h1>
     </div>
-    <div id="preco">R$500,98</div>
+    <div id="preco"></div>
     <div onclick="addFavoritos()" id="favoritos"><i class="fas fa-heart"></i>
     </div>
     <div id="removerFavorito" onclick="removerFavoritos()">
@@ -63,9 +67,13 @@
     <div onclick="comprarProduto()" id="comprar">Comprar</div>
     <div id="promptCompra">
         <div onclick="fecharPrompt()" id="fecharPrompt">X</div>
-        <div id="defQuantidade"><input type="range" aria-valuemin="1" aria-valuemax="10"></div>
-        <div id="finalizarCompra">Finalizar Compra</div>
-    </div>
+        <div id="defQuantidade">
+            <p>Defina a quantidade de encomendas</p>
+            <input type="range" value="1" min="1" max="10" oninput="display.value=value" onchange="display.value=value">
+            <input type="text" id="display" value="0" readonly>
+            <input type="text" id="precoProduto" value="0">
+            <p id="maisDeUmProduto">Preço:</p>
+        </div>
 </body>
 
 </html>

@@ -161,7 +161,7 @@
     text-align: center;
     padding: .5rem;
     max-width: 5.5rem;
-    margin: auto auto 1rem auto;
+    margin: auto auto 1.5rem auto;
     background-color: #3080e8;
     color: #fff;
     font-weight: bold;
@@ -177,7 +177,7 @@
 #promptCompra{
     height: 0;
     min-width: 98%;
-    margin:  -35rem auto auto auto;
+    margin: auto;
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -192,8 +192,42 @@
     cursor: pointer;
 }
 
-#miniMostrador{
-    background-color: cornsilk;
-    width: 4rem;
-    height: 4rem;
+#defQuantidade{
+    text-align: center;
+}
+
+#defQuantidade p{
+    font-size: 1.3rem;
+    color: #fff;
+    
+}
+
+input[type="range"]{
+    height: .5rem;
+    width: 10rem;
+    text-align: center;
+    margin: auto;
+    border-radius: .2rem;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 5px #47474771;
+    height: 1rem;
+    width: 2rem;
+    border-radius: .2rem;
+    background: #575c61;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type="text"]{
+    width: 1.6rem;
+    text-align: center;
+    background: none;
+    border: none;
+    color: #333638;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
