@@ -20,11 +20,12 @@ const produtosEmEstoque = () => {
     estoque.unico = "Modelo Único"
     document.getElementById("produtosRestantes").innerHTML = estoque.numero;
 
-};
+}
 
+var preco = 50.00
 
 const confPreco = () => {
-    document.getElementById("preco").innerHTML = "R$50,00"
+    document.getElementById("preco").innerHTML = "R$"+preco+",00"
 }
 
 const comprarProduto = () => {
@@ -39,21 +40,8 @@ const fecharPrompt = () => {
     document.getElementById("promptCompra").style.marginTop = "auto";
 }
 
-/*
-const confInput = () => {
-    var $range = document.querySelector('input'),
-        $value = document.querySelector('span');
-        $precoProdutos = document.querySelector('input');
-
-    $range.addEventListener('input', function () {
-        $value.textContent = this.value;
-    });
-}
-*/
-
-
 const calcPreco = () =>{
-    var custo=50;
+    var custo=preco;
     if(document.getElementById("display").value==1){
         document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+custo
     }
@@ -87,5 +75,3 @@ const calcPreco = () =>{
     
     
 }
-
-
