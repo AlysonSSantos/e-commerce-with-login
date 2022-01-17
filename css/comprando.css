@@ -172,6 +172,7 @@
     background: #4030e8;
     box-shadow: 0 0 50px #4030e8;
     cursor: pointer;
+    transition: .2s;
 }
 
 #promptCompra{
@@ -199,7 +200,12 @@
 #defQuantidade p{
     font-size: 1.3rem;
     color: #fff;
-    
+}
+
+#maisDeUmProduto:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .2s;
 }
 
 input[type="range"]{

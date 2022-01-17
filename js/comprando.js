@@ -51,10 +51,41 @@ const confInput = () => {
 }
 */
 
-/*
-const precoMaisDeUm = () =>{
-    custo=50;
-    document.getElementById("maisDeUmProduto").innerHTML=custo+custo
+
+const calcPreco = () =>{
+    var custo=50;
+    if(document.getElementById("display").value==1){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+custo
+    }
+    if(document.getElementById("display").value==2){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo)
+    }
+    if(document.getElementById("display").value==3){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo)
+    }
+    if(document.getElementById("display").value==4){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo)
+    }
+    if(document.getElementById("display").value==5){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo+custo)
+    }
+    if(document.getElementById("display").value==6){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo+custo+custo)
+    }
+    if(document.getElementById("display").value==7){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo+custo+custo+custo)
+    }
+    if(document.getElementById("display").value==8){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo+custo+custo+custo+custo)
+    }
+    if(document.getElementById("display").value==9){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo+custo+custo+custo+custo+custo)
+    }
+    if(document.getElementById("display").value==10){
+        document.getElementById("maisDeUmProduto").innerHTML="Clique para ver o preço:"+" "+"R$"+(custo+custo+custo+custo+custo+custo+custo+custo+custo+custo)
+    }
+    
+    
 }
-*/
+
 
