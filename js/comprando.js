@@ -92,3 +92,24 @@ const selecionarCorYellow = () => {
     document.getElementById("colorBlue").style.border = "none"
     document.getElementById("colorRed").style.border = "none"
 }
+
+const alertIcon = () =>{
+    Swal.fire({
+        title: 'Deseja confirmar a compra?',
+        text: "Caso tenha problemas, fique tranquilo, a garantia devolve seu dinheiro :)",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim, confirmar!',
+        cancelButtonText: "Cancelar"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Confirmado!',
+            'O vendedor será notificado e seu pedido enviado em breve.',
+            'success'
+          )
+        }
+      })
+}

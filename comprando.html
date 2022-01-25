@@ -15,8 +15,12 @@
 
     <script src="js/comprando.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--conf biblioteca SweetAlert-->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!--conf biblioteca SweetAlert-->    
 
 </head>
 <html>
@@ -73,8 +77,7 @@
             <input type="text" id="display" value="1" readonly>
             <p onclick="calcPreco()" id="maisDeUmProduto">Clique para ver o preço:</p>
             <div id="corProdutos">Selecione a cor desejada: <div id="colorRed" onclick="selecionarCorRed()"></div><div id="colorBlue" onclick="selecionarCorBlue()"></div><div id="colorYellow" onclick="selecionarCorYellow()"></div><p id="info">Contate a possibilidade de escolher mais de uma cor com o vendedor</p></div>
-            <div id="btnFinalizarCompra">Finalizar Compra</div>
+            <div onclick="alertIcon()" id="btnFinalizarCompra">Finalizar Compra</div>
         </div>
 </body>
-
 </html>
