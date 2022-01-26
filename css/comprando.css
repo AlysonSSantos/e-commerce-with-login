@@ -6,6 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+br{
+    display: none;
+}
 
 #voltar img{
     margin: 1.5rem 1rem;
@@ -157,14 +160,19 @@
     text-align: justify;
 }
 
-#comprar{
+#btnCompraECarrinho{
     text-align: center;
+    margin: auto;
+}
+
+#comprar{
     padding: .5rem;
     max-width: 5.5rem;
     margin: auto auto 1.5rem auto;
     background-color: #3080e8;
     color: #fff;
     font-weight: bold;
+    display: inline-block;
 }
 
 
@@ -173,6 +181,15 @@
     box-shadow: 0 0 50px #4030e8;
     cursor: pointer;
     transition: .2s;
+}
+
+#adicionarAoCarrinho{
+    text-align: center;
+    display: inline-block;
+}
+
+#adicionarAoCarrinho lord-icon:hover{
+    cursor: pointer;
 }
 
 #promptCompra{
@@ -259,7 +276,7 @@ input[type="text"]{
 #colorBlue{
     width: 2rem;
     height: 2rem;
-    margin: -.5rem .3rem;
+    margin: .5rem .3rem -1rem .3rem;
     background-color: #3080e8;
     display: inline-block;
     cursor: pointer;
@@ -268,7 +285,7 @@ input[type="text"]{
 #colorRed{
     width: 2rem;
     height: 2rem;
-    margin: -.5rem .3rem;
+    margin: .5rem .3rem -1rem .3rem;
     background-color: #e83030;
     display: inline-block;
     cursor: pointer;
@@ -277,7 +294,7 @@ input[type="text"]{
 #colorYellow{
     width: 2rem;
     height: 2rem;
-    margin: -.5rem .3rem;
+    margin: .5rem .3rem -1rem .3rem;
     background-color: #e8dc30;
     display: inline-block;
     cursor: pointer;
@@ -287,4 +304,10 @@ p#info{
     margin-top: 2rem;
     color: #e2e0e0;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 750px){
+    br{
+        display: block;
+    }
 }

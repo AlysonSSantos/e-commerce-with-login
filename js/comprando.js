@@ -75,6 +75,14 @@ const calcPreco = () => {
 
 }
 
+const adicionarAoCarrinhoPaginaDois = () =>{
+    Swal.fire(
+        'Adicionado ao Carinho!',
+        'O produto foi adicionado ao carrinho com sucesso!',
+        'success'
+      )
+}
+
 const selecionarCorRed = () => {
     document.getElementById("colorRed").style.border = "solid #fff"
     document.getElementById("colorBlue").style.border = "none"
@@ -110,6 +118,12 @@ const alertIcon = () =>{
             'O vendedor será notificado e seu pedido enviado em breve.',
             'success'
           )
+        }else{
+            Swal.fire(
+            'Pedido Cancelado!',
+            'Pedido cancelado pelo usuário',
+            'error'
+            )
         }
       })
 }

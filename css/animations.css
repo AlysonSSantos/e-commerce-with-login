@@ -1,0 +1,63 @@
+/*Configurando animação do mostrador de imagens*/
+
+@keyframes mostradorCarrossel {
+    0%{
+        margin-top: -4.3%;
+    }
+    20%{
+        margin-top: -4.3%;
+    }    
+    25%{
+        margin-top: -42%;
+    }
+    45%{
+        margin-top: -42%;
+    }
+    50%{
+        margin-top: -75%
+    }
+    70%{
+        margin-top: -75%;
+    }
+    80%{
+        margin-top: -108%;
+    }
+    90%{
+        margin-top: -108%;
+    }
+    100%{
+        margin-top: -144.7%;
+    }
+}
+
+/*Configurando animação do fundo do mostrador de imagens*/
+
+@keyframes backgroundMostrador {
+    0%{
+        background-color: #D56501;
+    }
+    20%{
+        background-color: #D56501;
+    }    
+    25%{
+        background-color: #ffffff;
+    }
+    45%{
+        background-color: #ffffff;
+    }
+    50%{
+        background-color: #D56501;
+    }
+    70%{
+        background-color: #D56501;
+    }
+    80%{
+        background-color: #fff;
+    }
+    90%{
+        background-color: #fff;
+    }
+    100%{
+        background-color: #D56501;
+    }
+}

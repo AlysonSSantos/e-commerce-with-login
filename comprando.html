@@ -8,7 +8,10 @@
     <title id="tituloSite" onload="novoTitulo()">Shoping.com</title>
 
     <link rel="stylesheet" href="css/comprando.css" />
-
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!--Configurando ícones-->
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <!--Conf ícones-->
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <script src="js/main.js"></script>
@@ -68,7 +71,16 @@
             voluptatibus odio deleniti cum ratione quibusdam. Nobis suscipit minus alias at commodi ducimus adipisci
             architecto incidunt libero rem.</p>
     </div>
-    <div onclick="comprarProduto()" id="comprar">Comprar</div>
+
+    <div id="btnCompraECarrinho">
+        <div onclick="comprarProduto()" id="comprar">Comprar</div>
+        <div onclick="adicionarAoCarrinhoPaginaDois()" id="adicionarAoCarrinho">
+            <lord-icon src="https://cdn.lordicon.com/slkvcfos.json" trigger="hover"
+            colors="primary:#3080e8,secondary:#4030e8" style="width:3.5rem;height:3.5rem">
+            </lord-icon>
+        </div>
+    </div>
+    
     <div id="promptCompra">
         <div onclick="fecharPrompt()" id="fecharPrompt">X</div>
         <div id="defQuantidade">
@@ -76,7 +88,7 @@
             <input type="range" value="1" min="1" max="10" oninput="display.value=value" onchange="display.value=value">
             <input type="text" id="display" value="1" readonly>
             <p onclick="calcPreco()" id="maisDeUmProduto">Clique para ver o preço:</p>
-            <div id="corProdutos">Selecione a cor desejada: <div id="colorRed" onclick="selecionarCorRed()"></div><div id="colorBlue" onclick="selecionarCorBlue()"></div><div id="colorYellow" onclick="selecionarCorYellow()"></div><p id="info">Contate a possibilidade de escolher mais de uma cor com o vendedor</p></div>
+            <div id="corProdutos">Selecione a cor desejada:<br><div id="colorRed" onclick="selecionarCorRed()"></div><div id="colorBlue" onclick="selecionarCorBlue()"></div><div id="colorYellow" onclick="selecionarCorYellow()"></div><p id="info">Contate a possibilidade de escolher mais de uma cor com o vendedor</p></div>
             <div onclick="alertIcon()" id="btnFinalizarCompra">Finalizar Compra</div>
         </div>
 </body>

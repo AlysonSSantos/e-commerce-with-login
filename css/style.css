@@ -228,6 +228,25 @@ lord-icon {
     background: #abb2b633;
 }
 
+#mostradorDeImagens{
+    overflow: hidden;
+    width: 70rem;
+    height: 21.6rem;
+    text-align: center;
+    margin: 2.5rem auto;
+    animation: backgroundMostrador 20s infinite;
+}
+
+.fotos{
+    animation: mostradorCarrossel 20s infinite;
+}
+
+.fotos img{
+    width: 50%;
+    background-size: cover;
+    text-align: center;
+}
+
 #produtos {
     text-align: center;
 }
@@ -299,7 +318,6 @@ lord-icon {
     #carrinho {
         display: none;
     }
-
     #menuCarrinho {
         display: none;
     }
@@ -307,7 +325,26 @@ lord-icon {
     #fecharCarrinho {
         display: none;
     }
+
+    #mostradorDeImagens{
+        margin: 2rem auto;
+        width: 30rem;
+        height: 9rem;
+        text-align: center;
+    }
+
+    .fotos{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .fotos img{
+        text-align: center;
+    }
+
     .item{
         margin: 1rem .5rem .5rem .5rem;
     }
+
 }
