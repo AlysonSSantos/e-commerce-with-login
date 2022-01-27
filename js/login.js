@@ -45,6 +45,14 @@ function submit() {
     login = 1;
   }
   if (login == 0) {
-    alert("Dados incorretos, por favor, tente novamente");
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Dados incorretos, tente novamente!',
+      footer: 'Esqueceu sua senha?  <a href="">Redefina-a aqui</a>',
+      confirmButtonColor: "#ee6b0e",
+      background: '#464747',
+      color: '#fff',
+    })
   }
 }
