@@ -61,3 +61,39 @@
         background-color: #D56501;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .fotos{
+        animation: mobileAnimation 20s infinite;
+    }
+}
+
+@keyframes mobileAnimation {
+    0%{
+        margin-top: -3.5%;
+    }
+    20%{
+        margin-top: -3.5%;
+    }    
+    25%{
+        margin-top: -41%;
+    }
+    45%{
+        margin-top: -41%;
+    }
+    50%{
+        margin-top: -78%
+    }
+    70%{
+        margin-top: -78%;
+    }
+    80%{
+        margin-top: -109%;
+    }
+    90%{
+        margin-top: -109%;
+    }
+    100%{
+        margin-top: -144.7%;
+    }
+}
