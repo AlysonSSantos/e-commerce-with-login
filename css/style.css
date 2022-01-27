@@ -233,7 +233,7 @@ lord-icon {
     width: 70rem;
     height: 21.6rem;
     text-align: center;
-    margin: 2.5rem auto;
+    margin: 5rem auto;
     animation: backgroundMostrador 20s infinite;
 }
 
@@ -327,7 +327,7 @@ lord-icon {
     }
 
     #mostradorDeImagens{
-        margin: 2rem auto;
+        margin: 3.5rem auto;
         width: 100%;
         height: 8rem;
         text-align: center;

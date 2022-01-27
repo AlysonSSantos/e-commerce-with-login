@@ -68,6 +68,7 @@
     }
 }
 
+/*Conf animação em telas menores*/
 @keyframes mobileAnimation {
     0%{
         margin-top: -3%;
